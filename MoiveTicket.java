@@ -1,13 +1,14 @@
+import org.joda.time.DateTime;
 
 public class MoiveTicket extends Product {
 
-	private String dateTime;
+	private DateTime dateTime;
 	private Address address;
 	private String movieName;
 	private int screenNo;
 	private double pricePerUnit;
 
-	public MoiveTicket(double productCode, String productType, String dateTime, Address address, String movieName,
+	public MoiveTicket(double productCode, String productType, DateTime dateTime, Address address, String movieName,
 			int screenNo, double pricePerUnit) {
 		super(productCode, productType);
 		this.dateTime = dateTime;
@@ -16,11 +17,11 @@ public class MoiveTicket extends Product {
 		this.pricePerUnit = pricePerUnit;
 	}
 
-	public String getDateTime() {
+	public DateTime getDateTime() {
 		return dateTime;
 	}
 
-	public void setDateTime(String dateTime) {
+	public void setDateTime(DateTime dateTime) {
 		this.dateTime = dateTime;
 	}
 

@@ -1,12 +1,13 @@
+import org.joda.time.DateTime;
 
 public class SeasonPass extends Product {
 
 	private String name;
-	private String startDate;
-	private String endDate;
+	private DateTime startDate;
+	private DateTime endDate;
 	private double cost;
 	
-	public SeasonPass(double productCode, String productType, String name, String startDate, String endDate, double cost) {
+	public SeasonPass(double productCode, String productType, String name, DateTime startDate, DateTime endDate, double cost) {
 		super(productCode, productType);
 		this.name = name;
 		this.startDate = startDate;
@@ -20,16 +21,16 @@ public class SeasonPass extends Product {
 	public void setName(String name) {
 		this.name = name;
 	}
-	public String getStartDate() {
+	public DateTime getStartDate() {
 		return startDate;
 	}
-	public void setStartDate(String startDate) {
+	public void setStartDate(DateTime startDate) {
 		this.startDate = startDate;
 	}
-	public String getEndDate() {
+	public DateTime getEndDate() {
 		return endDate;
 	}
-	public void setEndDate(String endDate) {
+	public void setEndDate(DateTime endDate) {
 		this.endDate = endDate;
 	}
 	public double getCost() {
